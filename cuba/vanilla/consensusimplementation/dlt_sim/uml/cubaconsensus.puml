@@ -1,0 +1,100 @@
+@startuml
+skinparam backgroundColor strategy
+skinparam defaultFontColor black
+skinparam defaultFontSize 30
+skinparam ArrowColor mediumturquoise
+skinparam ArrowThickness 5
+skinparam DefaultFontName Broadway
+package org.renaultleat.consensus {
+
+  class MessagePool {
+    + blockMessagePool : Map<Integer, CopyOnWriteArrayList<String>>
+    + commitMessagePool : Map<String, CopyOnWriteArrayList<String>>
+    + commitMessagePoolIndexes : Map<String, CopyOnWriteArrayList<Integer>>
+    + finaliseMessagePool : Map<Integer, CopyOnWriteArrayList<String>>
+    + heartBeatMessagePool : Map<Integer, CopyOnWriteArrayList<String>>
+    + proposeMessagePool : Map<String, CopyOnWriteArrayList<String>>
+    + quorumMessagePool : Map<Integer, CopyOnWriteArrayList<String>>
+    + quorumStorage : QuorumStorage
+    + roundChangeMessagePool : Map<Integer, CopyOnWriteArrayList<String>>
+    + utilitarianCalculator : UtilitarianCalculator
+  }
+  class FinaliseMessage {
+    ~ epoch : int
+    ~ messageSender : String
+    ~ messageSignature : String
+    ~ nodeIndex : int
+    ~ partialBlock : PartialBlock
+    ~ round : int
+    ~ subepoch : int
+    ~ temporalHashingState : Map<Timestamp, Map<List<Integer>, String>>
+    ~ type : String
+    
+  }
+
+  class QuorumMessage {
+    ~ altruistList : List<Integer>
+    + blackListedMembers : Map<Integer, List<Integer>>
+    ~ blockindex : int
+    ~ currentSuspendedMembers : Set<Integer>
+    + effectiveUtilitarianScore : Map<Integer, Double>
+    ~ epoch : int
+    ~ fairAltruistList : List<Integer>
+    ~ idealAltruistList : List<Integer>
+    ~ inActiveMembers : Set<Integer>
+    ~ messageComment : String
+    ~ messageSender : String
+    ~ messageSignature : String
+    ~ nodeIndex : int
+    ~ originalNodeMap : Map<Integer, QuorumOriginal>
+    ~ proposedSubEpoch : int
+    ~ quorumIdInverseMapping : Map<Integer, List<Integer>>
+    ~ quorumIdMapping : Map<Integer, Integer>
+    ~ quorumIdMemberCount : Map<Integer, Integer>
+    ~ quorumIndexMapping : Map<Integer, Integer>
+    ~ quorumMessageType : int
+    ~ sortedFinalMap : Map<Integer, Integer>
+    ~ subepoch : int
+    + totaleffectivemembers : int
+    + totalquorummembers : int
+    ~ type : String
+    + utilitarianClassification : Map<Integer, Integer>
+    ~ walletMapping : Map<Integer, Integer>
+    ~ weakAltruistList : List<Integer>
+
+  }
+ 
+  class UtilitarianBlockScore {
+    ~ blockno : int
+    ~ interblockTimecoefficient : double
+    ~ nodeIndex : int
+    ~ peerUtilitarianCommitScoreMap : Map<Integer, Double>
+    ~ peerUtilitarianHeartBeatScoreMap : Map<Integer, Double>
+    ~ peerUtilitarianMaliciousScoreMap : Map<Integer, Double>
+    ~ peerUtilitarianMissedCommitScoreMap : Map<Integer, Double>
+    ~ peerUtilitarianMissedHeartBeatScoreMap : Map<Integer, Double>
+    ~ peerUtilitarianMissedProposalScoreMap : Map<Integer, Double>
+    ~ peerUtilitarianProposalScoreMap : Map<Integer, Double>
+    ~ subEpoch : int
+  }
+  class UtilitarianCalculator {
+    + blockchain : Blockchain
+    + heartBeatStorage : HeartBeatStorage
+    + quorumStorage : QuorumStorage
+    + utilitarianScoreStorage : UtilitarianScoreStorage
+    + wallet : Wallet
+    + formQuorumMessageForNextSubEpoch(proposedSubEpoch : int, type : int, blockIndex : int) : QuorumMessage
+    + formUtilitarianClassification(idealAltruistList, altruistList , fairAltruistList : , weakAltruistList >
+    + getUtilitarianBlockScore(currentBlock : Block, blockChain : Blockchain, heartBeatStorage : HeartBeatStorage) : UtilitarianBlockScore
+    + populateHeartBeatWin(quorumMembers : List<Integer>, blockTime : Timestamp) : List<Integer>
+    + populateQuorumIndexMappingandMemberCountandOriginalNode(quorumIndexMapping ,quorumIdMemberCount , quorumIdInverseMapping , originalNodeMap )
+    + populateWalletMapping(sortedMap : Map<Integer, Integer>) : Map<Integer, Integer>
+    + removeBlackList(finalSortedMap : Map<Integer, Integer>, consolidatedAltruistList : List<Integer>) : Map<Integer, Integer>
+    + updateQuorumMessage(quorumMessage : QuorumMessage)
+    + updateScoreMap(scoreMap : Map<Integer, Double>, scorers : List<Integer>, scorefactor : double)
+    + updateScoreMapwithFairness(scoreMap : Map<Integer, Double>, scorers : List<Integer>, scorefactor : double)
+  }
+}
+
+
+@enduml

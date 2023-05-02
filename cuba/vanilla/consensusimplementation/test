@@ -1,0 +1,101 @@
+./scripttest.sh 8080 mesh 20 4 0 0 0 true 4 600000 30000 4  500 100  1 false 5 true
+
+./scripttest.sh 9080 mesh 20 4 1 0 0 true 4 600000 30000 2  500 100  1 false 5 true
+
+./scripttest.sh 8088 mesh 20 4 2 0 0 true 4 600000 30000 2  500 100  1 false 5 true
+
+./scripttest.sh 8090 mesh 20 4 3 0 0 true 4 600000 30000 2  500 100  1 false 6 true
+-----------------------------------------------------------------------------------------------------------------------------
+
+./stoptomcat.sh
+
+ALso check quorum foprmation & lassification afterwards
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getQuorumStorage/1
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getBlocks
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getEphemeralBlocks
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getTransactionsValidatedNo
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getTransactionStorage/0
+--------------------------------------------
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getPeerAltruismBlockProposalScore
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getPeerAltruismCommitScore
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getPeerAltruismMissedCommitScore
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getPeerAltruismMaliciousScore
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getPeerAltruismHeartBeatScore
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getPeerAltruismMissedHeartBeatScore
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getAllScore
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getHeartBeatStorage
+--------------------------------------------
+
+http://dltsim-dash.unice.cust.tasfrance.com/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getBlocks
+
+http://dltsim-dash.unice.cust.tasfrance.com/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getEphemeralBlocks
+
+http://dltsim-dash.unice.cust.tasfrance.com/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getTransactionsValidatedNo
+
+http://dltsim-dash.unice.cust.tasfrance.com/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getTransactionStorage/1
+
+http://dltsim-dash.unice.cust.tasfrance.com/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getQuorumStorage/1
+---------------------------------------------
+
+./scripttest.sh 8080 mesh 5 4 0 0 0 true 4 600000 30000 2 4 2 1 false 5 true
+
+./scripttest.sh 9080 mesh 5 4 1 0 0 true 4 600000 30000 2 4 2 1 false 5 true
+
+./scripttest.sh 8088 mesh 5 4 2 0 0 true 4 600000 30000 2 4 2 1 false 5 true
+
+./scripttest.sh 8090 mesh 5 4 3 0 0 true 4 600000 30000 2 4 2 1 false 6 true
+
+
+./scripttest.sh 8080 mesh 5 4 0 0 0 true 4 600000 30000 2 4 2 1 false 20 true 20000 20000 5
+
+./scripttest.sh 9080 mesh 5 4 1 0 0 true 4 600000 30000 2 4 2 1 false 20 true 20000 20000 5
+
+./scripttest.sh 8088 mesh 5 4 2 0 0 true 4 600000 30000 2 4 2 1 false 20 true 20000 20000 5
+
+./scripttest.sh 8090 mesh 5 4 3 0 0 true 4 600000 30000 2 4 2 1 false 20 true 20000 20000 5
+
+-----------------------------------------------------------------------
+
+PRIVACY:
+===========
+./scripttest.sh 8080 mesh 5 4 0 0 0 true 4 600000 30000 2 4 2 1 true 20 false 20000 20000 5
+
+./scripttest.sh 9080 mesh 5 4 1 0 0 true 4 600000 30000 2 4 2 1 true 20 false 20000 20000 5
+
+./scripttest.sh 8088 mesh 5 4 2 0 0 true 4 600000 30000 2 4 2 1 true 20 false 20000 20000 5
+
+./scripttest.sh 8090 mesh 5 4 3 0 0 true 4 600000 30000 2 4 2 1 true 20 false 20000 20000 5
+
+
+https://www.ag-grid.com/javascript-data-grid/integrated-charts-customisation/#overriding-existing-themes
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/resultdev.jsp
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/altruismdev.jsp
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/effectivealtruismdev.jsp
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/nonaltruismdev.jsp
+
+http://localhost:8080/distributed_ledger_simulator_framework_consensus_testbench/rest/simulatorcontroller/getAltruismInterBlockTimeCoefficientGrid
+
+
+
+
+
+
+
+

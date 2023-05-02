@@ -1,0 +1,223 @@
+{
+    "gridHeaderArray": [
+        {
+            "headerName": "Node",
+            "field": "node"
+        },
+        {
+            "headerName": "SubEpoch1",
+            "field": "subepoch1"
+        },
+        {
+            "headerName": "SubEpoch2",
+            "field": "subepoch2"
+        },
+        {
+            "headerName": "SubEpoch3",
+            "field": "subepoch3"
+        },
+        {
+            "headerName": "SubEpoch4",
+            "field": "subepoch4"
+        },
+        {
+            "headerName": "SubEpoch5",
+            "field": "subepoch5"
+        },
+        {
+            "headerName": "SubEpoch6",
+            "field": "subepoch6"
+        },
+        {
+            "headerName": "SubEpoch7",
+            "field": "subepoch7"
+        },
+        {
+            "headerName": "SubEpoch8",
+            "field": "subepoch8"
+        },
+        {
+            "headerName": "SubEpoch9",
+            "field": "subepoch9"
+        },
+        {
+            "headerName": "SubEpoch10",
+            "field": "subepoch10"
+        },
+        {
+            "headerName": "SubEpoch11",
+            "field": "subepoch11"
+        },
+        {
+            "headerName": "SubEpoch12",
+            "field": "subepoch12"
+        },
+        {
+            "headerName": "SubEpoch13",
+            "field": "subepoch13"
+        }
+    ],
+    "scoreJSONValues": [
+        {
+            "node": "node0",
+            "subepoch1": 0,
+            "subepoch2": 0,
+            "subepoch3": 0,
+            "subepoch4": 0,
+            "subepoch5": 0,
+            "subepoch6": 0,
+            "subepoch7": 0,
+            "subepoch8": 0,
+            "subepoch9": 0,
+            "subepoch10": 0,
+            "subepoch11": 0,
+            "subepoch12": 0,
+            "subepoch13": 0
+        },
+        {
+            "node": "node1",
+            "subepoch1": 0,
+            "subepoch2": 0,
+            "subepoch3": 0,
+            "subepoch4": 0,
+            "subepoch5": 0,
+            "subepoch6": 0,
+            "subepoch7": 0,
+            "subepoch8": 0,
+            "subepoch9": 0,
+            "subepoch10": 0,
+            "subepoch11": 0,
+            "subepoch12": 0,
+            "subepoch13": 0
+        },
+        {
+            "node": "node2",
+            "subepoch1": 0,
+            "subepoch2": 0,
+            "subepoch3": 0,
+            "subepoch4": 0,
+            "subepoch5": 0,
+            "subepoch6": 0,
+            "subepoch7": 0,
+            "subepoch8": 0,
+            "subepoch9": 0,
+            "subepoch10": 0,
+            "subepoch11": 0,
+            "subepoch12": 0,
+            "subepoch13": 0
+        },
+        {
+            "node": "node3",
+            "subepoch1": 0,
+            "subepoch2": 0,
+            "subepoch3": 0,
+            "subepoch4": 0,
+            "subepoch5": 0,
+            "subepoch6": 0,
+            "subepoch7": 0,
+            "subepoch8": 0,
+            "subepoch9": 0,
+            "subepoch10": 0,
+            "subepoch11": 0,
+            "subepoch12": 0,
+            "subepoch13": 0
+        },
+        {
+            "node": "node4",
+            "subepoch1": 0,
+            "subepoch2": 0,
+            "subepoch3": 0,
+            "subepoch4": 0,
+            "subepoch5": 0,
+            "subepoch6": 0,
+            "subepoch7": 0,
+            "subepoch8": 0,
+            "subepoch9": 0,
+            "subepoch10": 0,
+            "subepoch11": 0,
+            "subepoch12": 0,
+            "subepoch13": 0
+        },
+        {
+            "node": "node5",
+            "subepoch1": 0,
+            "subepoch2": 0,
+            "subepoch3": 0,
+            "subepoch4": 0,
+            "subepoch5": 0,
+            "subepoch6": 0,
+            "subepoch7": 0,
+            "subepoch8": 0,
+            "subepoch9": 0,
+            "subepoch10": 0,
+            "subepoch11": 0,
+            "subepoch12": 0,
+            "subepoch13": 0
+        },
+        {
+            "node": "node6",
+            "subepoch1": 0,
+            "subepoch2": 0,
+            "subepoch3": 0,
+            "subepoch4": 0,
+            "subepoch5": 0,
+            "subepoch6": 0,
+            "subepoch7": 0,
+            "subepoch8": 0,
+            "subepoch9": 0,
+            "subepoch10": 0,
+            "subepoch11": 0,
+            "subepoch12": 0,
+            "subepoch13": 0
+        },
+        {
+            "node": "node7",
+            "subepoch1": 14.94502,
+            "subepoch2": 15.78181,
+            "subepoch3": 12.08759,
+            "subepoch4": 12.09348,
+            "subepoch5": 11.58638,
+            "subepoch6": 16.890300000000001,
+            "subepoch7": 17.962329999999999,
+            "subepoch8": 16.76274,
+            "subepoch9": 16.74316,
+            "subepoch10": 19.23315,
+            "subepoch11": 10.78309,
+            "subepoch12": 13.3828600000000004,
+            "subepoch13": 13.52599
+        },
+        {
+            "node": "node8",
+            "subepoch1": 14.85824,
+            "subepoch2": 12.18815,
+            "subepoch3": 15.92426,
+            "subepoch4": 5.95168,
+            "subepoch5": 15.17009,
+            "subepoch6": 18.30398,
+            "subepoch7": 18.30398,
+            "subepoch8": 15.1169400000000005,
+            "subepoch9": 13.73545,
+            "subepoch10": 13.73545,
+            "subepoch11": 15.929070000000001,
+            "subepoch12": 11.18263,
+            "subepoch13": 11.18752
+        },
+        {
+            "node": "node9",
+            "subepoch1": 14.942889999999999,
+            "subepoch2": 14.77341,
+            "subepoch3": 11.19769,
+            "subepoch4": 13.61339,
+            "subepoch5": 13.52846,
+            "subepoch6": 13.87917,
+            "subepoch7": 14.66806,
+            "subepoch8": 14.66806,
+            "subepoch9": 13.8463100000000003,
+            "subepoch10": 16.32558,
+            "subepoch11": 13.7970800000000002,
+            "subepoch12": 17.60866,
+            "subepoch13": 17.71044
+        }
+    ],
+    "altuismGridValues": []
+}

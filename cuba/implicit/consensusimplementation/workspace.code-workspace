@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../capbftdltsimulatordeploy-democraticimplicit"
+		},
+		{
+			"path": "../capbftdltresultvisualizer-democraticimplicit"
+		}
+	],
+	"settings": {}
+}

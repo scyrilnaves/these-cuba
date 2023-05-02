@@ -1,0 +1,321 @@
+{
+    "gridHeaderArray": [
+        {
+            "headerName": "Node",
+            "field": "node"
+        },
+        {
+            "headerName": "SubEpoch1",
+            "field": "subepoch1"
+        },
+        {
+            "headerName": "SubEpoch2",
+            "field": "subepoch2"
+        },
+        {
+            "headerName": "SubEpoch3",
+            "field": "subepoch3"
+        },
+        {
+            "headerName": "SubEpoch4",
+            "field": "subepoch4"
+        },
+        {
+            "headerName": "SubEpoch5",
+            "field": "subepoch5"
+        },
+        {
+            "headerName": "SubEpoch6",
+            "field": "subepoch6"
+        },
+        {
+            "headerName": "SubEpoch7",
+            "field": "subepoch7"
+        },
+        {
+            "headerName": "SubEpoch8",
+            "field": "subepoch8"
+        },
+        {
+            "headerName": "SubEpoch9",
+            "field": "subepoch9"
+        },
+        {
+            "headerName": "SubEpoch10",
+            "field": "subepoch10"
+        },
+        {
+            "headerName": "SubEpoch11",
+            "field": "subepoch11"
+        },
+        {
+            "headerName": "SubEpoch12",
+            "field": "subepoch12"
+        },
+        {
+            "headerName": "SubEpoch13",
+            "field": "subepoch13"
+        },
+        {
+            "headerName": "SubEpoch14",
+            "field": "subepoch14"
+        },
+        {
+            "headerName": "SubEpoch15",
+            "field": "subepoch15"
+        },
+        {
+            "headerName": "SubEpoch16",
+            "field": "subepoch16"
+        },
+        {
+            "headerName": "SubEpoch17",
+            "field": "subepoch17"
+        },
+        {
+            "headerName": "SubEpoch18",
+            "field": "subepoch18"
+        },
+        {
+            "headerName": "SubEpoch19",
+            "field": "subepoch19"
+        },
+        {
+            "headerName": "SubEpoch20",
+            "field": "subepoch20"
+        }
+    ],
+    "scoreJSONValues": [
+        {
+            "node": "node0",
+            "subepoch1": 9.33097,
+            "subepoch2": 20.270659999999996,
+            "subepoch3": 32.301199999999994,
+            "subepoch4": 41.22345,
+            "subepoch5": 59.148375,
+            "subepoch6": 68.597435,
+            "subepoch7": 73.364275,
+            "subepoch8": 89.7767,
+            "subepoch9": 100.70465,
+            "subepoch10": 109.43338,
+            "subepoch11": 114.894125,
+            "subepoch12": 125.63645,
+            "subepoch13": 126.62884,
+            "subepoch14": 135.60192999999998,
+            "subepoch15": 148.51779,
+            "subepoch16": 156.73064499999998,
+            "subepoch17": 157.82875499999997,
+            "subepoch18": 177.55884999999998,
+            "subepoch19": 179.54807999999997,
+            "subepoch20": 192.62451999999996
+        },
+        {
+            "node": "node1",
+            "subepoch1": 0.0,
+            "subepoch2": 2.58491,
+            "subepoch3": 12.270319999999998,
+            "subepoch4": 14.848849999999999,
+            "subepoch5": 21.291179999999997,
+            "subepoch6": 25.809074999999996,
+            "subepoch7": 25.809074999999996,
+            "subepoch8": 28.370084999999996,
+            "subepoch9": 41.293335,
+            "subepoch10": 52.302184999999994,
+            "subepoch11": 62.65221,
+            "subepoch12": 73.616745,
+            "subepoch13": 84.606445,
+            "subepoch14": 103.372705,
+            "subepoch15": 119.53684999999999,
+            "subepoch16": 127.24964999999999,
+            "subepoch17": 139.52846499999998,
+            "subepoch18": 149.887995,
+            "subepoch19": 168.65455,
+            "subepoch20": 184.82577
+        },
+        {
+            "node": "node2",
+            "subepoch1": 6.422759999999999,
+            "subepoch2": 23.049970000000002,
+            "subepoch3": 38.453855000000004,
+            "subepoch4": 51.04609000000001,
+            "subepoch5": 64.17351000000001,
+            "subepoch6": 76.7792,
+            "subepoch7": 94.68368,
+            "subepoch8": 105.59559,
+            "subepoch9": 121.49683,
+            "subepoch10": 129.45278,
+            "subepoch11": 136.4064,
+            "subepoch12": 142.36951499999998,
+            "subepoch13": 156.59246499999998,
+            "subepoch14": 169.49325499999998,
+            "subepoch15": 187.553905,
+            "subepoch16": 199.98040999999998,
+            "subepoch17": 213.40263499999998,
+            "subepoch18": 231.23813499999997,
+            "subepoch19": 246.65864499999998,
+            "subepoch20": 257.56404499999996
+        },
+        {
+            "node": "node3",
+            "subepoch1": 13.186465,
+            "subepoch2": 27.403734999999998,
+            "subepoch3": 34.359894999999995,
+            "subepoch4": 53.468554999999995,
+            "subepoch5": 62.39326499999999,
+            "subepoch6": 77.34670499999999,
+            "subepoch7": 90.48711499999999,
+            "subepoch8": 94.66770999999999,
+            "subepoch9": 108.99040999999998,
+            "subepoch10": 124.41025999999998,
+            "subepoch11": 148.86885499999997,
+            "subepoch12": 162.00861999999998,
+            "subepoch13": 172.39386499999998,
+            "subepoch14": 184.40873999999997,
+            "subepoch15": 199.33858999999995,
+            "subepoch16": 209.23942999999994,
+            "subepoch17": 215.17702999999995,
+            "subepoch18": 232.59320999999994,
+            "subepoch19": 242.56903999999994,
+            "subepoch20": 254.47886999999994
+        },
+        {
+            "node": "node4",
+            "subepoch1": 17.161419999999996,
+            "subepoch2": 31.996989999999997,
+            "subepoch3": 46.18911,
+            "subepoch4": 54.137010000000004,
+            "subepoch5": 66.56163000000001,
+            "subepoch6": 72.03338000000001,
+            "subepoch7": 86.90134,
+            "subepoch8": 102.209895,
+            "subepoch9": 105.18184500000001,
+            "subepoch10": 123.11603000000001,
+            "subepoch11": 138.04499,
+            "subepoch12": 144.59027500000002,
+            "subepoch13": 158.47655500000002,
+            "subepoch14": 164.43340500000002,
+            "subepoch15": 173.72854,
+            "subepoch16": 179.69154,
+            "subepoch17": 187.35359,
+            "subepoch18": 190.07887,
+            "subepoch19": 197.24428,
+            "subepoch20": 205.60735
+        },
+        {
+            "node": "node5",
+            "subepoch1": 9.903559999999999,
+            "subepoch2": 11.00222,
+            "subepoch3": 11.00222,
+            "subepoch4": 12.19653,
+            "subepoch5": 13.386119999999998,
+            "subepoch6": 20.49709,
+            "subepoch7": 32.43903,
+            "subepoch8": 49.748575,
+            "subepoch9": 50.941375,
+            "subepoch10": 53.333695,
+            "subepoch11": 55.713825,
+            "subepoch12": 74.20697000000001,
+            "subepoch13": 84.34941500000002,
+            "subepoch14": 96.88027000000002,
+            "subepoch15": 96.88027000000002,
+            "subepoch16": 100.43518000000003,
+            "subepoch17": 108.18616500000003,
+            "subepoch18": 116.51016500000003,
+            "subepoch19": 130.10667000000004,
+            "subepoch20": 145.61768500000002
+        },
+        {
+            "node": "node6",
+            "subepoch1": 8.34058,
+            "subepoch2": 16.275100000000002,
+            "subepoch3": 31.754490000000004,
+            "subepoch4": 42.68985000000001,
+            "subepoch5": 58.000020000000006,
+            "subepoch6": 67.93289,
+            "subepoch7": 79.96749,
+            "subepoch8": 80.9663,
+            "subepoch9": 96.2961,
+            "subepoch10": 101.27136,
+            "subepoch11": 113.20769,
+            "subepoch12": 121.64208500000001,
+            "subepoch13": 137.771365,
+            "subepoch14": 152.00144500000002,
+            "subepoch15": 165.13806000000002,
+            "subepoch16": 172.80057000000002,
+            "subepoch17": 186.96589000000003,
+            "subepoch18": 194.62720000000002,
+            "subepoch19": 205.35966000000002,
+            "subepoch20": 211.90334500000003
+        },
+        {
+            "node": "node7",
+            "subepoch1": 11.830305,
+            "subepoch2": 20.595014999999997,
+            "subepoch3": 39.99598999999999,
+            "subepoch4": 49.93612999999999,
+            "subepoch5": 64.873995,
+            "subepoch6": 75.79518499999999,
+            "subepoch7": 87.74222499999999,
+            "subepoch8": 99.750215,
+            "subepoch9": 111.08145999999999,
+            "subepoch10": 124.19979,
+            "subepoch11": 134.05641,
+            "subepoch12": 144.436415,
+            "subepoch13": 152.761695,
+            "subepoch14": 163.149275,
+            "subepoch15": 169.151595,
+            "subepoch16": 183.502955,
+            "subepoch17": 195.533765,
+            "subepoch18": 199.088485,
+            "subepoch19": 206.74631499999998,
+            "subepoch20": 212.271695
+        },
+        {
+            "node": "node8",
+            "subepoch1": 6.219904999999999,
+            "subepoch2": 23.52825,
+            "subepoch3": 26.26907,
+            "subepoch4": 47.16617,
+            "subepoch5": 50.14259,
+            "subepoch6": 66.26635,
+            "subepoch7": 71.24523,
+            "subepoch8": 85.53066,
+            "subepoch9": 96.46668,
+            "subepoch10": 113.424395,
+            "subepoch11": 117.87775,
+            "subepoch12": 120.25083000000001,
+            "subepoch13": 131.19345,
+            "subepoch14": 137.11612000000002,
+            "subepoch15": 146.65284000000003,
+            "subepoch16": 169.34185500000004,
+            "subepoch17": 186.68560000000002,
+            "subepoch18": 203.66706000000002,
+            "subepoch19": 213.47229500000003,
+            "subepoch20": 226.60708500000004
+        },
+        {
+            "node": "node9",
+            "subepoch1": 9.807265000000001,
+            "subepoch2": 21.147800000000004,
+            "subepoch3": 31.051130000000004,
+            "subepoch4": 44.160415,
+            "subepoch5": 56.212125,
+            "subepoch6": 68.79901,
+            "subepoch7": 85.20031999999999,
+            "subepoch8": 95.12205999999999,
+            "subepoch9": 102.23469499999999,
+            "subepoch10": 111.18710499999999,
+            "subepoch11": 130.87212499999998,
+            "subepoch12": 147.76217499999998,
+            "subepoch13": 157.704635,
+            "subepoch14": 161.682495,
+            "subepoch15": 167.63745999999998,
+            "subepoch16": 180.75554499999998,
+            "subepoch17": 198.61771499999998,
+            "subepoch18": 203.07924999999997,
+            "subepoch19": 214.55720499999998,
+            "subepoch20": 223.497235
+        }
+    ],
+    "altuismGridValues": []
+}

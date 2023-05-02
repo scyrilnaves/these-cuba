@@ -1,0 +1,317 @@
+<html>
+
+<head>
+    <title>DLT Simulator</title>
+    <script src='Chart.js' charset="utf-8"></script>
+    <script src='ag-grid-enterprise.min.js' charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div style="margin:100px;">
+        <!--  <div class="navbar navbar-inverse navbar-static-top"> -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <a class="navbar-brand" href="/">DLT Simulator</a>
+        </div>
+        <div id="logo">
+            <h1 style="color:white;">DLT Simulator</h1>
+            <img src="leat.jpeg" alt="LEAT" width="300" height="150">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <img src="renault.png" alt="Renault" width="300" height="150">
+        </div>
+        </nav>
+        <!--   <div class="jumbotron" style="padding:40px;"> -->
+        <div id="container"></div>
+        <br>
+        <div>
+            <button id="generate">Get Test Types</button>
+        </div>
+        <b>Consensus Type:</b> <input type="text" id="consensus" value="" readonly>&nbsp&nbsp;
+        <b>No of Nodes:</b> <input type="text" id="NoNode" value="" readonly>&nbsp&nbsp;
+        <b>Network Type:</b> <input type="text" id="NwType" value="" readonly>&nbsp&nbsp;
+        <b>Block Size:</b> <input type="text" id="blSize" value="" readonly>&nbsp&nbsp;
+        <b>Network Latency</b> <input type="text" id="nwLatency" value="" readonly>&nbsp&nbsp;
+        <b>Node Behaviour:</b> <input type="text" id="nodeBehavior" value="" readonly>&nbsp&nbsp;
+        <b>Total Txs:</b> <input type="text" id="totalTxs" value="" readonly>&nbsp&nbsp;
+        <b>Total Validators:</b> <input type="text" id="totalValid" value="" readonly>&nbsp&nbsp;
+        <b>Are you Validator:</b> <input type="text" id="isValid" value="" readonly>&nbsp&nbsp;
+        <b>Round Change Timeout:</b> <input type="text" id="roundChange" value="" readonly>&nbsp&nbsp;
+
+        <b>Transactions Validated:</b> <input type="text" id="txvalidated" value="" readonly>&nbsp&nbsp;
+        <b>Test Duration(secs):</b> <input type="text" id="testduration" value="" readonly>&nbsp&nbsp;
+
+        <b>Heart Beat Time(msecs):</b> <input type="text" id="heartBeatTime" value="" readonly>&nbsp&nbsp;
+        <b>Total Quorums:</b> <input type="text" id="totalQuorums" value="" readonly>&nbsp&nbsp;
+        <b>Epoch Threshold(msecs):</b> <input type="text" id="epochThreshold" value="" readonly>&nbsp&nbsp;
+        <b>Sub Epoch Threshold(msecs):</b> <input type="text" id="subEpochThreshold" value="" readonly>&nbsp&nbsp;
+        <b>Privacy Id:</b> <input type="text" id="privacyId" value="" readonly>&nbsp&nbsp;
+        <b>Normal:</b> <input type="text" id="isPrivacy" value="" readonly>&nbsp&nbsp;
+        <b>Full Block Fulfill(msecs):</b> <input type="text" id="isNormal" value="" readonly>&nbsp&nbsp;
+        <b>Partial Block Fulfill(msecs):</b> <input type="text" id="fullBlockFulfillTime" value="" readonly>&nbsp&nbsp;
+        <b>Black List Level:</b> <input type="text" id="partialBlockFulfillTime" value="" readonly>&nbsp&nbsp;
+        <b>Test Duration(secs):</b> <input type="text" id="blackListLevel" value="" readonly>&nbsp&nbsp;
+
+        <h3>Missed Commit utilitarian Score</h3>
+        <div id="myGridMissedCommit" class="ag-theme-alpine" width="300" style="height: 500px"></div>
+
+        <h3>Malicious utilitarian Score</h3>
+        <div id="myGridMalicious" class="ag-theme-alpine" width="300" style="height: 500px"></div>
+
+        <h3>Missed Heart Beat utilitarian Score</h3>
+        <div id="myGridMissedHeartBeat" class="ag-theme-alpine" width="300" style="height: 500px"></div>
+
+        <h3>Missed Partial Block Proposal Score</h3>
+        <div id="myGridMissedBlockProposal" class="ag-theme-alpine" width="300" style="height: 500px"></div>
+
+        <!-- </div> -->
+    </div>
+    <script type="text/javascript">
+        ///////////////////////////////////////////////////////////////////////////////////////
+
+        document.getElementById('generate').onclick = function () {
+            const testtypes = [];
+            fetch('testtype.txt')
+                .then(response => response.text())
+                .then(text => {
+                    let linearray = text.split('\n'); for (var i = 0; i < linearray.length; i++) {
+                        testtypes.push(linearray[i].toString() + ",first");
+                        testtypes.push(linearray[i].toString() + ",mid");
+                        testtypes.push(linearray[i].toString() + ",last");
+
+                    }
+                    var select = document.createElement("select");
+                    select.name = "Testtypes";
+                    select.id = "Testtypes";
+                    select.onchange = changeTestType;
+
+                    for (var k = 0; k < testtypes.length; k++) {
+                        // console.log(testtypes[k]);
+                        var option = document.createElement("option");
+                        option.value = testtypes[k];
+                        option.text = testtypes[k]
+                        select.appendChild(option);
+                    }
+
+                    var label = document.createElement("label");
+                    label.innerHTML = "Choose your test Type: "
+                    label.htmlFor = "Testtypes";
+
+                    document.getElementById("container").appendChild(label).appendChild(select);
+                })
+
+        }
+        function changeTestType() {
+            var e = document.getElementById("Testtypes");
+            var testString = e.value;
+
+            chartfunction(testString)
+        }
+        //////////////////////////////////////////////////////////////////////////////////////
+
+        // Get the network State as API CALLS
+
+        function chartfunction(testType) {
+            var testTypeArray = testType.split(",")
+            var actualTest = testTypeArray[0];
+            var url = testTypeArray[1];
+            console.log("test" + actualTest);
+            console.log("url" + url);
+            var basepath = actualTest + "/" + url + "/";
+            var testDetails = actualTest.split(';');
+            var NoNode = testDetails[0].split(':')[1];
+            var NwType = testDetails[1].split(':')[1];
+            var blSize = testDetails[2].split(':')[1];
+            var nwLatency = testDetails[3].split(':')[1];
+            var nodeBehavior = testDetails[4].split(':')[1];
+            var totalTxs = testDetails[5].split(':')[1];
+            var consensus = testDetails[6].split(':')[1];
+            var totalValid = testDetails[7].split(':')[1];
+            var isValid = testDetails[8].split(':')[1];
+            var rchangeTime = testDetails[9].split(':')[1];
+
+            var heartBeatTime = testDetails[10].split(':')[1];
+            var totalQuorums = testDetails[11].split(':')[1];
+            var epochThreshold = testDetails[12].split(':')[1];
+            var subEpochThreshold = testDetails[13].split(':')[1];
+            var privacyId = testDetails[14].split(':')[1];
+            var isPrivacy = testDetails[15].split(':')[1];
+            var isNormal = testDetails[16].split(':')[1];
+            var fullBlockFulfillTime = testDetails[17].split(':')[1];
+            var partialBlockFulfillTime = testDetails[18].split(':')[1];
+            var blackListLevel = testDetails[19].split(':')[1];
+
+
+            document.getElementById("NoNode").value = NoNode;
+            document.getElementById("NwType").value = NwType;
+            document.getElementById("blSize").value = blSize;
+            document.getElementById("nwLatency").value = nwLatency;
+            if (nodeBehavior == "0") {
+                document.getElementById("nodeBehavior").value = "GOOD NODE :)";
+            } else {
+                document.getElementById("nodeBehavior").value = "BAD NODE !! :(";
+            }
+            document.getElementById("totalTxs").value = totalTxs;
+            document.getElementById("consensus").value = consensus;
+            document.getElementById("totalValid").value = totalValid;
+            document.getElementById("isValid").value = isValid;
+            document.getElementById("roundChange").value = rchangeTime;
+
+            document.getElementById("heartBeatTime").value = heartBeatTime;
+            document.getElementById("totalQuorums").value = totalQuorums;
+            document.getElementById("epochThreshold").value = epochThreshold;
+            document.getElementById("subEpochThreshold").value = subEpochThreshold;
+            document.getElementById("privacyId").value = privacyId;
+            document.getElementById("isPrivacy").value = isPrivacy;
+            document.getElementById("isNormal").value = isNormal;
+            document.getElementById("fullBlockFulfillTime").value = fullBlockFulfillTime;
+            document.getElementById("partialBlockFulfillTime").value = partialBlockFulfillTime;
+            document.getElementById("blackListLevel").value = blackListLevel;
+
+            // Transaction Validated
+            $.getJSON(basepath + "txvalidated.json", function (data) {
+
+                const txvalidateddata = JSON.parse(data);
+                document.getElementById("txvalidated").value = txvalidateddata;
+
+            })
+            // Test Time
+            fetch(basepath + "duration.txt")
+                .then(response => response.text())
+                .then(text => {
+                    var duration = text.split(':')[1];
+                    document.getElementById("testduration").value = duration;
+                })
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            // End API Calls
+            //START PROCESSED MISSED COMMIT PART
+            var columnMissedCommitDefs = [];
+            var rowMissedCommitData = [];
+
+            //START PROCESSED MALICIOUS PART
+            var columnMaliciousDefs = [];
+            var rowMaliciousData = [];
+
+            //START PROCESSED MISSED HEART BEAT PART
+            var columnMissedHeartBeatDefs = [];
+            var rowMissedHeartBeatData = [];
+
+            //START PROCESSED MISSED BLOCK PROPOSAL PART
+            var columnMissedBlockProposalDefs = [];
+            var rowMissedBlockProposalData = [];
+
+            fetch(basepath + "missedcommitnoncumul.json").then(response => response.json()).then(data => {
+                let utilitarianmissedcommitdata = data;
+                columnMissedCommitDefs = utilitarianmissedcommitdata.gridHeaderArray;
+                rowMissedCommitData = utilitarianmissedcommitdata.scoreJSONValues;
+
+                var gridMissedCommitOptions = {
+                    columnDefs: columnMissedCommitDefs,
+                    rowData: rowMissedCommitData,
+                    defaultColDef: {
+                        editable: true,
+                        sortable: true,
+                        flex: 1,
+                        minWidth: 100,
+                        filter: true,
+                        resizable: true,
+                    },
+                    enableRangeSelection: true,
+                    enableCharts: true,
+                    popupParent: document.body,
+                    chartThemes: ['ag-pastel', 'ag-material-dark', 'ag-vivid-dark', 'ag-solar']
+                };
+
+
+                fetch(basepath + "maliciousscorenoncumul.json").then(response => response.json()).then(data => {
+                    let utilitarianmaliciousdata = data;
+                    columnMaliciousDefs = utilitarianmaliciousdata.gridHeaderArray;
+                    rowMaliciousData = utilitarianmaliciousdata.scoreJSONValues;
+
+                    var gridMaliciousOptions = {
+                        columnDefs: columnMaliciousDefs,
+                        rowData: rowMaliciousData,
+                        defaultColDef: {
+                            editable: true,
+                            sortable: true,
+                            flex: 1,
+                            minWidth: 100,
+                            filter: true,
+                            resizable: true,
+                        },
+                        enableRangeSelection: true,
+                        enableCharts: true,
+                        popupParent: document.body,
+                        chartThemes: ['ag-pastel', 'ag-material-dark', 'ag-vivid-dark', 'ag-solar']
+                    };
+
+
+                    fetch(basepath + "missedheartbeatnoncumul.json").then(response => response.json()).then(data => {
+                        let utilitarianmissedheartbeatdata = data;
+                        columnMissedHeartBeatDefs = utilitarianmissedheartbeatdata.gridHeaderArray;
+                        rowMissedHeartBeatData = utilitarianmissedheartbeatdata.scoreJSONValues;
+
+                        var gridMissedHeartBeatOptions = {
+                            columnDefs: columnMissedHeartBeatDefs,
+                            rowData: rowMissedHeartBeatData,
+                            defaultColDef: {
+                                editable: true,
+                                sortable: true,
+                                flex: 1,
+                                minWidth: 100,
+                                filter: true,
+                                resizable: true,
+                            },
+                            enableRangeSelection: true,
+                            enableCharts: true,
+                            popupParent: document.body,
+                            chartThemes: ['ag-pastel', 'ag-material-dark', 'ag-vivid-dark', 'ag-solar']
+                        };
+
+                        fetch(basepath + "missedblockproposalnoncumul.json").then(response => response.json()).then(data => {
+                            let utilitarianmissedblockproposaldata = data;
+                            columnMissedBlockProposalDefs = utilitarianmissedblockproposaldata.gridHeaderArray;
+                            rowMissedBlockProposalData = utilitarianmissedblockproposaldata.scoreJSONValues;
+
+                            var gridMissedBlockProposalOptions = {
+                                columnDefs: columnMissedBlockProposalDefs,
+                                rowData: rowMissedBlockProposalData,
+                                defaultColDef: {
+                                    editable: true,
+                                    sortable: true,
+                                    flex: 1,
+                                    minWidth: 100,
+                                    filter: true,
+                                    resizable: true,
+                                },
+                                enableRangeSelection: true,
+                                enableCharts: true,
+                                popupParent: document.body,
+                                chartThemes: ['ag-pastel', 'ag-material-dark', 'ag-vivid-dark', 'ag-solar']
+                            };
+
+                            var gridMissedCommitDiv = document.querySelector('#myGridMissedCommit');
+                            new agGrid.Grid(gridMissedCommitDiv, gridMissedCommitOptions);
+
+                            var gridMaliciousDiv = document.querySelector('#myGridMalicious');
+                            new agGrid.Grid(gridMaliciousDiv, gridMaliciousOptions);
+
+                            var gridMissedHeartBeatDiv = document.querySelector('#myGridMissedHeartBeat');
+                            new agGrid.Grid(gridMissedHeartBeatDiv, gridMissedHeartBeatOptions);
+
+                            var gridMissedBlockProposalDiv = document.querySelector('#myGridMissedBlockProposal');
+                            new agGrid.Grid(gridMissedBlockProposalDiv, gridMissedBlockProposalOptions);
+
+                        })
+                    })
+                })
+            })
+
+        }
+
+
+    </script>
+</body>
+
+</html>

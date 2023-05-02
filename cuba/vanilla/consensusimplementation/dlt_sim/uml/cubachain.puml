@@ -1,0 +1,84 @@
+@startuml
+skinparam backgroundColor aliceblue
+skinparam defaultFontColor black
+skinparam defaultFontSize 40
+skinparam ArrowColor mediumturquoise
+skinparam ArrowThickness 5
+skinparam DefaultFontName Broadway
+package org.renaultleat.chain {
+  class Block {
+    ~ blocknumber : int
+    ~ blocktime : Timestamp
+    ~ epoch : int
+    ~ finalised : boolean
+    ~ hash : String
+    ~ originalproposernodeindex : int
+    + partialBlockMap : ConcurrentMap<Integer, PartialBlock>
+    ~ previousblockhash : String
+    ~ proposalType : String
+    ~ proposeCalculatedatindex : int
+    ~ proposer : String
+    ~ proposernodeindex : int
+    ~ roundno : int
+    ~ signature : String
+    ~ subepoch : int
+    ~ temporalHashingState : ConcurrentMap<Integer, HashingState>
+    ~ validity : boolean
+  }
+
+  class Blockchain {
+    + blockChainIndexCounter : AtomicInteger
+    + blockIds : CopyOnWriteArrayList<Integer>
+    ~ chain : NavigableMap<Integer, Block>
+    ~ ephemeralchain : NavigableMap<Integer, Block>
+    + finalEpochCounter : AtomicInteger
+    + finalSubEpochCounter : AtomicInteger
+    ~ nonValidator : NonValidator
+    ~ nonValidators : CopyOnWriteArrayList<String>
+    + partialblockProposeCounter : AtomicInteger
+    + partialblockSubEpochCounter : AtomicInteger
+    ~ quorumStorage : QuorumStorage
+    + roundCounter : AtomicInteger
+    ~ validator : Validator
+    ~ validators : CopyOnWriteArrayList<String>
+  }
+  class HashingState {
+    ~ hash : String
+    ~ hasher : int
+    ~ hashtime : Timestamp
+    ~ partialBlockState : List<Integer>
+    + getBlockTime() : Timestamp
+    + getHash() : String
+    + getHasher() : int
+    + getPartialBlockState() : List<Integer>
+    + setBlockTime(inHashtime : Timestamp)
+    + setHash(inHash : String)
+    + setHasher(inHasher : int)
+    + setPartialBlockState(inPartialBlockState : List<Integer>)
+  }
+  class PartialBlock {
+    ~ QuorumId : int
+    ~ blockHeight : int
+    ~ blocktime : Timestamp
+    ~ commitMessageValidators : CopyOnWriteArrayList<String>
+    ~ commitMessageValidatorsIndexes : CopyOnWriteArrayList<Integer>
+    + finalised : boolean
+    ~ hash : String
+    ~ majorblocknumber : int
+    ~ minorblocknumber : int
+    ~ originalProposernodeindex : int
+    ~ originalRivalProposernodeindex : int
+    ~ previoushash : String
+    ~ proposalType : String
+    ~ proposeCalculatedatindex : int
+    ~ proposer : String
+    ~ proposernodeindex : int
+    ~ rivalproposerindex : int
+    ~ signature : String
+    ~ subepoch : int
+    ~ transactions : CopyOnWriteArrayList<Transaction>
+    ~ validity : boolean
+  }
+}
+
+@enduml

@@ -1,0 +1,28 @@
+Need to fix Quorum Formation after 4
+
+Also look at blacklist threshold issue
+
+Forgetting coefiicent
+Privacy issue
+
+
+1) Sometime empty blocks
+Partial Blocks empty
+change Get Blocks to see which is 0 
+Resolved--
+80 but 75
+2) Fix transaction code point problem
+Resolved--
+3) Quorum Problems
+--------------------------------
+1) Fix partial Block Rival Proposer but It adds more than required partial blocks 
+------
+2) Fix Original Index to Wallet Index in Proposer for Blockchain
+------
+3) Proposer Invalidity check
+------
+3) Change Round change for existing Sub epoch
+------
+4) Poblem in Qid
+5) Unomment ad to queue messages & chek
+3) Privacy

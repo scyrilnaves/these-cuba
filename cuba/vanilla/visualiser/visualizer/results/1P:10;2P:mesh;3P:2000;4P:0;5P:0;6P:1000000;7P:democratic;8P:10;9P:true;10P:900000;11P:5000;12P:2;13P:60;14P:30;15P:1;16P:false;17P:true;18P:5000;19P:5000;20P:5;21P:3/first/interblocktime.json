@@ -1,0 +1,391 @@
+{
+    "gridHeaderArray": [
+        {
+            "headerName": "SubEpoch",
+            "field": "subepoch"
+        },
+        {
+            "headerName": "Block1",
+            "field": "block1"
+        },
+        {
+            "headerName": "Block2",
+            "field": "block2"
+        },
+        {
+            "headerName": "Block3",
+            "field": "block3"
+        },
+        {
+            "headerName": "Block4",
+            "field": "block4"
+        },
+        {
+            "headerName": "Block5",
+            "field": "block5"
+        },
+        {
+            "headerName": "Block6",
+            "field": "block6"
+        },
+        {
+            "headerName": "Block7",
+            "field": "block7"
+        },
+        {
+            "headerName": "Block8",
+            "field": "block8"
+        },
+        {
+            "headerName": "Block9",
+            "field": "block9"
+        },
+        {
+            "headerName": "Block10",
+            "field": "block10"
+        },
+        {
+            "headerName": "Block11",
+            "field": "block11"
+        },
+        {
+            "headerName": "Block12",
+            "field": "block12"
+        },
+        {
+            "headerName": "Block13",
+            "field": "block13"
+        },
+        {
+            "headerName": "Block14",
+            "field": "block14"
+        },
+        {
+            "headerName": "Block15",
+            "field": "block15"
+        },
+        {
+            "headerName": "Block16",
+            "field": "block16"
+        },
+        {
+            "headerName": "Block17",
+            "field": "block17"
+        },
+        {
+            "headerName": "Block18",
+            "field": "block18"
+        },
+        {
+            "headerName": "Block19",
+            "field": "block19"
+        },
+        {
+            "headerName": "Block20",
+            "field": "block20"
+        },
+        {
+            "headerName": "Block21",
+            "field": "block21"
+        },
+        {
+            "headerName": "Block22",
+            "field": "block22"
+        },
+        {
+            "headerName": "Block23",
+            "field": "block23"
+        },
+        {
+            "headerName": "Block24",
+            "field": "block24"
+        },
+        {
+            "headerName": "Block25",
+            "field": "block25"
+        }
+    ],
+    "scoreJSONValues": [
+        {
+            "subepoch": "subepoch1",
+            "block1": 1.0E-5,
+            "block2": 0.97421,
+            "block3": 0.97358,
+            "block4": 0.97578,
+            "block5": 0.8990400000000001,
+            "block6": 0.9946,
+            "block7": 0.99228,
+            "block8": 0.99032,
+            "block9": 0.98938,
+            "block10": 0.99462,
+            "block11": 0.99231,
+            "block12": 0.97828,
+            "block13": 0.97878,
+            "block14": 0.99438,
+            "block15": 0.99362,
+            "block16": 0.99335,
+            "block17": 0.97859,
+            "block18": 0.99834,
+            "block19": 0.99772,
+            "block20": 0.99636,
+            "block21": 0.9915,
+            "block22": 0.99793,
+            "block23": 0.96276,
+            "block24": 0.9926,
+            "block25": 0.9926
+        },
+        {
+            "subepoch": "subepoch2",
+            "block1": 0.49883999999999995,
+            "block2": 0.94739,
+            "block3": 0.99381,
+            "block4": 0.99362,
+            "block5": 0.99138,
+            "block6": 0.9906,
+            "block7": 0.98864,
+            "block8": 0.99682,
+            "block9": 0.99584,
+            "block10": 0.99553,
+            "block11": 0.99477,
+            "block12": 0.99326,
+            "block13": 0.99148,
+            "block14": 0.99994,
+            "block15": 0.95074,
+            "block16": 0.99024,
+            "block17": 0.98934,
+            "block18": 0.9963,
+            "block19": 0.99794,
+            "block20": 0.9914,
+            "block21": 0.99994,
+            "block22": 0.98922,
+            "block23": 0.9978,
+            "block24": 0.99542,
+            "block25": 0.9947
+        },
+        {
+            "subepoch": "subepoch3",
+            "block1": 1.0E-5,
+            "block2": 0.97421,
+            "block3": 0.97358,
+            "block4": 0.97578,
+            "block5": 0.8990400000000001,
+            "block6": 0.9946,
+            "block7": 0.99228,
+            "block8": 0.99032,
+            "block9": 0.98938,
+            "block10": 0.99462,
+            "block11": 0.99231,
+            "block12": 0.97828,
+            "block13": 0.97878,
+            "block14": 0.99438,
+            "block15": 0.99362,
+            "block16": 0.99335,
+            "block17": 0.97859,
+            "block18": 0.99834,
+            "block19": 0.99772,
+            "block20": 0.99636,
+            "block21": 0.9915,
+            "block22": 0.99793,
+            "block23": 0.96276,
+            "block24": 0.9926,
+            "block25": 0.9926
+        },
+        {
+            "subepoch": "subepoch4",
+            "block1": 0.49883999999999995,
+            "block2": 0.94739,
+            "block3": 0.99381,
+            "block4": 0.99362,
+            "block5": 0.99138,
+            "block6": 0.9906,
+            "block7": 0.98864,
+            "block8": 0.99682,
+            "block9": 0.99584,
+            "block10": 0.99553,
+            "block11": 0.99477,
+            "block12": 0.99326,
+            "block13": 0.99148,
+            "block14": 0.99994,
+            "block15": 0.95074,
+            "block16": 0.99024,
+            "block17": 0.98934,
+            "block18": 0.9963,
+            "block19": 0.99794,
+            "block20": 0.9914,
+            "block21": 0.99994,
+            "block22": 0.98922,
+            "block23": 0.9978,
+            "block24": 0.99542,
+            "block25": 0.9947
+        },
+        {
+            "subepoch": "subepoch5",
+            "block1": 1.0E-5,
+            "block2": 0.97421,
+            "block3": 0.97358,
+            "block4": 0.97578,
+            "block5": 0.8990400000000001,
+            "block6": 0.9946,
+            "block7": 0.99228,
+            "block8": 0.99032,
+            "block9": 0.98938,
+            "block10": 0.99462,
+            "block11": 0.99231,
+            "block12": 0.97828,
+            "block13": 0.97878,
+            "block14": 0.99438,
+            "block15": 0.99362,
+            "block16": 0.99335,
+            "block17": 0.97859,
+            "block18": 0.99834,
+            "block19": 0.99772,
+            "block20": 0.99636,
+            "block21": 0.9915,
+            "block22": 0.99793,
+            "block23": 0.96276,
+            "block24": 0.9926,
+            "block25": 0.9926
+        },
+        {
+            "subepoch": "subepoch6",
+            "block1": 0.49883999999999995,
+            "block2": 0.94739,
+            "block3": 0.99381,
+            "block4": 0.99362,
+            "block5": 0.99138,
+            "block6": 0.9906,
+            "block7": 0.98864,
+            "block8": 0.99682,
+            "block9": 0.99584,
+            "block10": 0.99553,
+            "block11": 0.99477,
+            "block12": 0.99326,
+            "block13": 0.99148,
+            "block14": 0.99994,
+            "block15": 0.95074,
+            "block16": 0.99024,
+            "block17": 0.98934,
+            "block18": 0.9963,
+            "block19": 0.99794,
+            "block20": 0.9914,
+            "block21": 0.99994,
+            "block22": 0.98922,
+            "block23": 0.9978,
+            "block24": 0.99542,
+            "block25": 0.9947
+        },
+        {
+            "subepoch": "subepoch7",
+            "block1": 1.0E-5,
+            "block2": 0.97421,
+            "block3": 0.97358,
+            "block4": 0.97578,
+            "block5": 0.8990400000000001,
+            "block6": 0.9946,
+            "block7": 0.99228,
+            "block8": 0.99032,
+            "block9": 0.98938,
+            "block10": 0.99462,
+            "block11": 0.99231,
+            "block12": 0.97828,
+            "block13": 0.97878,
+            "block14": 0.99438,
+            "block15": 0.99362,
+            "block16": 0.99335,
+            "block17": 0.97859,
+            "block18": 0.99834,
+            "block19": 0.99772,
+            "block20": 0.99636,
+            "block21": 0.9915,
+            "block22": 0.99793,
+            "block23": 0.96276,
+            "block24": 0.9926,
+            "block25": 0.9926
+        },
+        {
+            "subepoch": "subepoch8",
+            "block1": 0.49883999999999995,
+            "block2": 0.94739,
+            "block3": 0.99381,
+            "block4": 0.99362,
+            "block5": 0.99138,
+            "block6": 0.9906,
+            "block7": 0.98864,
+            "block8": 0.99682,
+            "block9": 0.99584,
+            "block10": 0.99553,
+            "block11": 0.99477,
+            "block12": 0.99326,
+            "block13": 0.99148,
+            "block14": 0.99994,
+            "block15": 0.95074,
+            "block16": 0.99024,
+            "block17": 0.98934,
+            "block18": 0.9963,
+            "block19": 0.99794,
+            "block20": 0.9914,
+            "block21": 0.99994,
+            "block22": 0.98922,
+            "block23": 0.9978,
+            "block24": 0.99542,
+            "block25": 0.9947
+        },
+        {
+            "subepoch": "subepoch9",
+            "block1": 1.0E-5,
+            "block2": 0.97421,
+            "block3": 0.97358,
+            "block4": 0.97578,
+            "block5": 0.8990400000000001,
+            "block6": 0.9946,
+            "block7": 0.99228,
+            "block8": 0.99032,
+            "block9": 0.98938,
+            "block10": 0.99462,
+            "block11": 0.99231,
+            "block12": 0.97828,
+            "block13": 0.97878,
+            "block14": 0.99438,
+            "block15": 0.99362,
+            "block16": 0.99335,
+            "block17": 0.97859,
+            "block18": 0.99834,
+            "block19": 0.99772,
+            "block20": 0.99636,
+            "block21": 0.9915,
+            "block22": 0.99793,
+            "block23": 0.96276,
+            "block24": 0.9926,
+            "block25": 0.9926
+        },
+        {
+            "subepoch": "subepoch10",
+            "block1": 0.49883999999999995,
+            "block2": 0.94739,
+            "block3": 0.99381,
+            "block4": 0.99362,
+            "block5": 0.99138,
+            "block6": 0.9906,
+            "block7": 0.98864,
+            "block8": 0.99682,
+            "block9": 0.99584,
+            "block10": 0.99553,
+            "block11": 0.99477,
+            "block12": 0.99326,
+            "block13": 0.99148,
+            "block14": 0.99994,
+            "block15": 0.95074,
+            "block16": 0.99024,
+            "block17": 0.98934,
+            "block18": 0.9963,
+            "block19": 0.99794,
+            "block20": 0.9914,
+            "block21": 0.99994,
+            "block22": 0.98922,
+            "block23": 0.9978,
+            "block24": 0.99542,
+            "block25": 0.9947
+        }
+    ],
+    "altuismGridValues": []
+}

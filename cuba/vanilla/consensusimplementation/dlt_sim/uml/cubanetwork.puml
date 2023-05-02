@@ -1,0 +1,59 @@
+@startuml
+skinparam backgroundColor oldlace
+skinparam defaultFontColor black
+skinparam defaultFontSize 40
+skinparam ArrowColor mediumturquoise
+skinparam ArrowThickness 5
+skinparam DefaultFontName Broadway
+package org.renaultleat.network {
+  class HeartBeatStorage {
+    + peerUtilitarianHeartBeat : Map<Integer, Timestamp>
+    + getActivePeers() : List<Integer>
+    + getLatestPeerHeartBeat(index : int) : Timestamp
+    + getPeerUtilitarianHeartBeat() : Map<Integer, Timestamp>
+    + incrementPeerHeartBeat(index : int, inTimeStamp : Timestamp)
+    + setEffectiveUtilitarianScore(peerUtilitarianHeartBeat : Map<Integer, Timestamp>)
+  }
+
+  class QueueResource {
+    ~ finaliseBlockingQueue : BlockingQueue<JSONObject>
+    ~ fullBlockBlockingQueue : BlockingQueue<JSONObject>
+    ~ heartBeatBlockingQueue : BlockingQueue<JSONObject>
+    ~ messageBlockingQueue : BlockingQueue<JSONObject>
+    ~ quorumBlockingQueue : BlockingQueue<JSONObject>
+    ~ transactionBlockingQueue : BlockingQueue<JSONObject>
+    ~ transactionBlockingQueueSec : BlockingQueue<JSONObject>
+    ~ transactionBlockingQueueTer : BlockingQueue<JSONObject>
+    
+  }
+  class QuorumStorage {
+    ~ altruistList : List<Integer>
+    + currentmembersinsideurquorum : int {static}
+    + effectiveUtilitarianScore : Map<Integer, Map<Integer, Double>>
+    ~ fairAltruistList : List<Integer>
+    ~ idealAltruistList : List<Integer>
+    ~ interQuorumApprovals : int
+    ~ intraQuorumApprovals : int
+    + quorumInitialised : boolean {static}
+    + quorumMessageMap : NavigableMap<Integer, QuorumMessage>
+    + quorumid : int {static}
+    + quorumindex : int {static}
+    + totaleffectivemembers : int {static}
+    + totalquorummembers : int {static}
+    + utilitarianClassification : Map<Integer, Integer>
+    ~ weakAltruistList : List<Integer>
+    
+  }
+  class UtilitarianScoreStorage {
+    + PeerUtilitarianBlockProposalScore : Map<Integer, Map<Integer, Double>>
+    + PeerUtilitarianCommitScore : Map<Integer, Map<Integer, Double>>
+    + PeerUtilitarianHeartBeatScore : Map<Integer, Map<Integer, Double>>
+    + PeerUtilitarianMaliciousScore : Map<Integer, Map<Integer, Double>>
+    + PeerUtilitarianMissedBlockProposalScore : Map<Integer, Map<Integer, Double>>
+    + PeerUtilitarianMissedCommitScore : Map<Integer, Map<Integer, Double>>
+    + PeerUtilitarianMissedHeartBeatScore : Map<Integer, Map<Integer, Double>>
+    + interBlockTimeCoefficient : Map<Integer, Map<Integer, Double>>
+  }
+}
+
+@enduml

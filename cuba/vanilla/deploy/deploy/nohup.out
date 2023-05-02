@@ -1,0 +1,151 @@
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+Unable to use a TTY - input is not a terminal or the right kind of file
+N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 4
+My IP: 10.42.1.74
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 5
+My IP: 10.42.0.205
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Node Network Set""Peers Value Set""Block Size Set"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 6
+My IP: 10.42.1.75
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Total Nodes Set""Total Validators Set""Total Effective Members Set only Initially"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 1
+My IP: 10.42.1.73
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Node Network Set""Node Property Set""Peers Value Set"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 8
+My IP: 10.42.0.204
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Node Latency Set""Block Size Set""Total Nodes Set""Node Behavior Set""Set As Validator:true""Total Validators Set""Total Effective Members Set only Initially""Round Change Time Out Set"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 7
+My IP: 10.42.2.99
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Heart Beat Frequency Out Set"" Total Quorums Set""Node Network Set""Epoch Threshold Set"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 9
+My IP: 10.42.2.100
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Node Network Set""Peers Value Set""Node Property Set"" Sub Epoch Threshold Set""Block Size Set""Peers Value Set""Node Latency Set""Full Block Time Out Set""Total Nodes Set""Block Size Set""Node Behavior Set""Partial Block Time Out Set""Total Validators Set""Set As Validator:true""Total Nodes Set""Black List Threshold Set"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 2
+My IP: 10.42.2.98
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Total Effective Members Set only Initially""Round Change Time Out Set""Total Validators Set""Connection initiated""Heart Beat Frequency Out Set""Total Effective Members Set only Initially"" Total Quorums Set""Epoch Threshold Set""Node Property Set"" Sub Epoch Threshold Set"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 3
+My IP: 10.42.0.202
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Node Network Set""Node Latency Set""Node Network Set""Full Block Time Out Set""Peers Value Set""Node Behavior Set""Partial Block Time Out Set""Node Property Set""Peers Value Set""Block Size Set""Set As Validator:true""Black List Threshold Set""Node Latency Set""Block Size Set""Total Nodes Set""Round Change Time Out Set""Node Behavior Set""Total Nodes Set""Connection initiated""Heart Beat Frequency Out Set""Total Validators Set""Set As Validator:true""Total Effective Members Set only Initially"" Total Quorums Set""Total Validators Set""Round Change Time Out Set""Total Effective Members Set only Initially""Epoch Threshold Set""Node Network Set"" Sub Epoch Threshold Set""Heart Beat Frequency Out Set"N Value:0
+N Value:1
+N Value:2
+N Value:3
+N Value:4
+N Value:5
+N Value:6
+N Value:7
+N Value:8
+N Value:9
+Formed Peer IP to Connect for Peer: 0
+My IP: 10.42.1.72
+Peers are:10.42.1.72,10.42.1.73,10.42.2.98,10.42.0.202,10.42.1.74,10.42.0.205,10.42.1.75,10.42.2.99,10.42.0.204,10.42.2.100,
+"Peers Value Set""Full Block Time Out Set"" Total Quorums Set""Block Size Set""Partial Block Time Out Set""Epoch Threshold Set""Node Network Set""Black List Threshold Set""Node Property Set""Total Nodes Set"" Sub Epoch Threshold Set""Peers Value Set""Node Latency Set""Total Validators Set""Full Block Time Out Set""Connection initiated""Block Size Set""Node Behavior Set""Total Effective Members Set only Initially""Node Property Set""Partial Block Time Out Set""Total Nodes Set""Set As Validator:true""Node Latency Set""Total Validators Set""Black List Threshold Set""Round Change Time Out Set""Node Behavior Set""Total Effective Members Set only Initially""Connection initiated""Heart Beat Frequency Out Set""Set As Validator:true"" Total Quorums Set""Epoch Threshold Set""Round Change Time Out Set""Node Network Set""Node Property Set""Heart Beat Frequency Out Set"" Sub Epoch Threshold Set""Full Block Time Out Set""Peers Value Set""Node Latency Set"" Total Quorums Set""Node Behavior Set""Partial Block Time Out Set""Block Size Set""Epoch Threshold Set""Node Property Set""Set As Validator:true""Black List Threshold Set""Total Nodes Set""Node Latency Set"" Sub Epoch Threshold Set""Round Change Time Out Set""Total Validators Set""Node Behavior Set""Connection initiated""Full Block Time Out Set""Heart Beat Frequency Out Set""Total Effective Members Set only Initially""Set As Validator:true""Partial Block Time Out Set"" Total Quorums Set""Round Change Time Out Set""Black List Threshold Set""Epoch Threshold Set""Heart Beat Frequency Out Set""Node Network Set"" Sub Epoch Threshold Set""Connection initiated"" Total Quorums Set""Peers Value Set""Full Block Time Out Set""Epoch Threshold Set""Block Size Set""Partial Block Time Out Set"" Sub Epoch Threshold Set""Total Nodes Set""Black List Threshold Set""Node Property Set""Full Block Time Out Set""Node Latency Set""Total Validators Set""Connection initiated""Partial Block Time Out Set""Total Effective Members Set only Initially""Node Behavior Set""Black List Threshold Set""Set As Validator:true""Connection initiated""Round Change Time Out Set""Heart Beat Frequency Out Set"" Total Quorums Set""Epoch Threshold Set"" Sub Epoch Threshold Set""Node Property Set""Full Block Time Out Set""Node Latency Set""Node Behavior Set""Partial Block Time Out Set""Black List Threshold Set""Set As Validator:true""Round Change Time Out Set""Connection initiated""Heart Beat Frequency Out Set"" Total Quorums Set""Epoch Threshold Set"" Sub Epoch Threshold Set""Full Block Time Out Set""Partial Block Time Out Set""Black List Threshold Set""Connection initiated""Listening to Peers""Listening to Peers""Listening to Peers""Listening to Peers""Listening to Peers""Listening to Peers""Listening to Peers""Listening to Peers""Listening to Peers""Listening to Peers""Initialised""Initialised""Initialised""Initialised""Initialised""Initialised""Initialised""Initialised""Initialised""Initialised""Initital Quorum Attempted""Initialised""Initital Quorum Attempted""Collator Started"started firing
+"Simulation Started 4""Initialised""Initital Quorum Attempted""Collator Started"started firing
+"Initital Quorum Attempted""Simulation Started 4""Initialised""Initialised""Collator Started"started firing
+"Collator Started"started firing
+"Initital Quorum Attempted""Initital Quorum Attempted""Simulation Started 4""Simulation Started 4""Initital Quorum Attempted""Initital Quorum Attempted""Initialised""Initital Quorum Attempted""Initialised""Collator Started"started firing
+"Initialised""Initialised""Collator Started"started firing
+"Collator Started""Simulation Started 4"started firing
+"Collator Started"started firing
+"Initital Quorum Attempted""Simulation Started 4""Simulation Started 4""Initialised""Simulation Started 4""Collator Started"started firing
+"Initialised""Collator Started"started firing
+"Simulation Started 4""Simulation Started 4"

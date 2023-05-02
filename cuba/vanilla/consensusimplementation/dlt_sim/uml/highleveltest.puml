@@ -1,0 +1,118 @@
+@startuml
+package org.renaultleat.consensus {
+  class BFTMessageHandler {
+
+  }
+  class BFTMessagePool {
+ 
+  }
+  class Message {
+   
+  }
+  class Synchronizer {
+   
+  }
+}
+package org.renaultleat.network {
+  class NetworkTopologyGenerator {
+   
+  }
+  class P2PServer {
+   
+  }
+  class QueueResource {
+   
+  }
+}
+package org.renaultleat.properties {
+  class NodeDevProperty {
+  
+  }
+  class NodeProperty {
+   
+  }
+}
+package org.renaultleat.node {
+  class NonValidator {
+  
+  }
+  class Transaction {
+   
+  }
+  class Validator {
+  
+  }
+  class Wallet {
+   
+  }
+}
+package org.renaultleat.api {
+  class Simulator_controller {
+  
+  }
+  class Simulator_result {
+  
+  }
+  class Simulator_service {
+   
+  }
+}
+package org.renaultleat.crypto {
+  class CryptoUtil {
+   
+  }
+  class NodeKeyGenerator {
+   
+  }
+}
+package org.renaultleat.chain {
+  class Block {
+   
+  }
+  class BlockPool {
+    
+  }
+  class Blockchain {
+  
+  }
+  class TransactionPool {
+   
+  }
+}
+Simulator_controller -->   NonValidator
+Blockchain -->   NonValidator
+Simulator_service -->  P2PServer
+Simulator_controller -->  BlockPool
+P2PServer -->  QueueResource
+Block -->  Transaction
+TransactionPool -->  Blockchain
+BlockPool -->  Block
+Simulator_controller -->  TransactionPool
+BFTMessageHandler -->  BlockPool
+Simulator_controller -->  QueueResource
+Simulator_controller -->  Simulator_result
+P2PServer -->  BFTMessagePool
+Simulator_service -->  Wallet
+BFTMessageHandler -->  NonValidator
+Simulator_service -->  Simulator_result
+Simulator_controller -->  Validator
+BFTMessageHandler --> BFTMessagePool
+Simulator_controller -->  Synchronizer
+P2PServer -->  NonValidator
+BFTMessageHandler -->  Wallet
+Simulator_controller -->  BFTMessagePool
+P2PServer -->  Validator
+Blockchain -->  Validator
+Simulator_controller -->  Blockchain
+Simulator_controller -->  P2PServer
+P2PServer -->  TransactionPool
+P2PServer -->  Wallet
+BFTMessageHandler -->  Blockchain
+P2PServer -->  BlockPool
+Simulator_controller -->  Wallet
+BFTMessageHandler -->  TransactionPool
+Blockchain -->  Block
+Simulator_controller -->  Simulator_service
+P2PServer -->  Blockchain
+BFTMessageHandler -->  Validator
+@enduml
